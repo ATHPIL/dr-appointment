@@ -1,0 +1,313 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
+
+/* Define Custom CSS Variables */
+:root {
+    --green: #16a085;
+    --black: #444;
+    --lightcolor: #777;
+    --box-shadow: .5rem .5rem 0 rgba(27, 160, 133, .2);
+    --text-shadow: .4rem .4rem 0 rgba(0, 0, .2);
+    --border: 2px solid var(--green);
+}
+
+/* Global Reset */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+/* Base Font Size */
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+/* Sections */
+section {
+    padding: 2rem 9%;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--green);
+    box-shadow: var(--box-shadow);
+    color: var(--green);
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn span {
+    padding: 7px 14px;
+    border-radius: 0.5rem;
+    background: var(--green);
+    color: #fff;
+    margin-left: 0.5rem;
+    transition: all 0.2s ease-out;
+}
+
+.btn:hover {
+    background: var(--green);
+    color: #fff;
+}
+
+.btn:hover span {
+    color: var(--green);
+    background-color: #fff;
+    margin-left: 1rem;
+}
+
+/* Header */
+header {
+    padding: 2rem 9%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    color: var(--lightcolor);
+    margin-left: 2rem;
+}
+
+header .navbar a:hover {
+    color: var(--green);
+}
+
+.menu-btn {
+    font-size: 2.8rem;
+    border-radius: 0.5rem;
+    background: #eee;
+    color: var(--green);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 10rem;
+}
+
+.home .image {
+    flex: 1 1 45%;
+}
+
+.home .image img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.home .content {
+    flex: 1 1 45%;
+}
+
+.home h3 {
+    font-size: 4.5rem;
+    color: var(--black);
+    line-height: 1.8;
+    text-shadow: var(--text-shadow);
+}
+
+.home p {
+    font-size: 1.7rem;
+    color: var(--lightcolor);
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+/* About Section */
+.about .heading {
+    color: var(--green);
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 0 0.2rem 0.2rem rgba(27, 160, 133, 0.4);
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 9%;
+}
+
+.about .row .image {
+    flex: 1 1 40%;
+}
+
+.about .row .image img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.about .row .content {
+    flex: 1 1 50%;
+    padding-right: 2rem;
+}
+
+.about .row .content h3 {
+    color: var(--green);
+    font-size: 2.8rem;
+    line-height: 1.5;
+}
+
+.about .row .content p {
+    color: var(--black);
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+/* Our Doctors Section */
+.center-heading {
+    text-align: center;
+    color: var(--green);
+    font-size: 36px;
+    text-shadow: var(--green);
+}
+
+.doctor-photo {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.box {
+    text-align: center;
+    background: #fff;
+    border-radius: 5rem;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+}
+
+.box h3 {
+    color: var(--green);
+    margin-top: 1rem;
+    font-size: 24px;
+}
+
+.box span {
+    color: var(--black);
+    font-size: 18px;
+}
+
+.share {
+    margin-top: 1rem;
+}
+
+.share a {
+    margin-right: 0.5rem;
+    color: var(--green);
+    font-size: 20px;
+}
+
+/* Reviews Section */
+.reviews {
+    background-color: #ffffff;
+    padding: 4rem 0;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.review-card {
+    background-color: var(--green);
+    color: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.review-content {
+    margin-bottom: 1.5rem;
+}
+
+.review-content p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.review-author {
+    font-size: 1.6rem;
+}
+
+.review-author h3 {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.review-author span {
+    font-style: italic;
+}
+/* Media Queries for Navigation Bar */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 2rem 6%;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2rem;
+        border-top: 1px solid var(--lightcolor);
+    }
+
+    .header .navbar.active {
+        display: flex;
+    }
+
+    .header .navbar a {
+        margin: 1rem 0;
+    }
+
+    .menu-btn {
+        position: relative;
+        z-index: 1100;
+    }
+}

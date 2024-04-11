@@ -1,0 +1,31 @@
+/* Add green border to form elements */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"] {
+  border: 2px solid green;
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Adjust form label styles */
+.form-group label {
+  margin-bottom: 5px;
+}
+
+/* Adjust form button styles */
+.btn-primary {
+  margin-top: 10px;
+}
+
+/* Move the image to the left */
+.col-md-6:first-child {
+  text-align: left;
+}
+.appointment-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
